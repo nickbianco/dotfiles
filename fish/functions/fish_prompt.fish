@@ -41,16 +41,19 @@ function fish_prompt --description 'Write out the prompt'
         set suffix '#'
     else
         set color_cwd $fish_color_cwd
-        set suffix '$'
+        set suffix '>'
     end
 
+    # Prompt
+    printf '%s@%s' $USER $hostname
+
     # PWD
-    set_color $color_cwd
-    echo -n (prompt_pwd)
-    set_color normal
+    # set_color $color_cwd
+    # echo -n (prompt_pwd)
+    # set_color normal
 
-    printf '%s ' (fish_vcs_prompt)
-
+    # Git
+    printf '%s ' (fish_git_prompt)
     set -l status_color (set_color $fish_color_status)
     set -l statusb_color (set_color --bold $fish_color_status)
     set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
