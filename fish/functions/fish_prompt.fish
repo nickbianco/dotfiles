@@ -16,13 +16,15 @@ function fish_prompt --description 'Write out the prompt'
         set suffix '❯'
     end
 
+    # colors: https://htmlcolorcodes.com/colors/mint-green/
+
     # User info
-    set_color --bold 98FB98
-    echo -n $USER@$hostname
-    set_color normal
+    # set_color --bold 98FB98 
+    # echo -n $USER@$hostname
+    # set_color normal
 
     # PWD
-    set_color $color_cwd
+    set_color 98FB98 # $color_cwd
     echo -n ' '(prompt_pwd)
     set_color normal
 
@@ -42,9 +44,9 @@ function fish_prompt --description 'Write out the prompt'
     set -l status_color (set_color $fish_color_status)
     set -l statusb_color (set_color --bold $fish_color_status)
     set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
-    echo -s ' '$prompt_status
+    echo -n ' '$prompt_status
     set_color normal
 
     # Prompt
-    echo -n -s "$suffix "
+    echo -n " $suffix "
 end
