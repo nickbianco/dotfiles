@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.openSettingsJson"
+    },
+    {
+        "key": "cmd+,",
+        "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+cmd+,",
+        "command": "workbench.action.openWorkspaceSettingsFile"
+    },
+    {
+        "key": "alt+cmd+,",
+        "command": "workbench.action.openSettings"
+    }
+]
