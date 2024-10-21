@@ -15,5 +15,9 @@
     {
         "key": "alt+cmd+,",
         "command": "workbench.action.openSettings"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "workbench.action.createTerminalEditor"
     }
 ]
