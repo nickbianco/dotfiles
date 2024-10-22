@@ -1,24 +1,46 @@
 {
     // General
-    "workbench.colorTheme": "Zenburn",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.iconTheme": "gruvbox-material-icon-theme",
     "debug.onTaskErrors": "abort",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
     "workbench.startupEditor": "none",
 
     // Terminal
-    "terminal.integrated.fontFamily": "monospace",
-    "terminal.integrated.commandsToSkipShell": [
-        "github.copilot.terminal.suggestCommand",
-        "matlab.interrupt"
-    ],
+    "terminal.external.osxExec": "iTerm2",
+    "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono, monospace",
+    "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.profiles.linux": {
+        "bash": null,
+        "tmux": {
+            "path": "bash",
+            "args": [
+                "-c",
+                "tmux new -ADs ${PWD##*/}"
+            ],
+            "icon": "terminal-tmux"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "tmux",
+    "terminal.integrated.profiles.osx": {
+        "bash": null,
+        "tmux": {
+            "path": "bash",
+            "args": [
+                "-c",
+                "tmux new -ADs ${PWD##*/}"
+            ],
+            "icon": "terminal-tmux"
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "tmux",
     
     // Editor
     "editor.fontSize": 12,
     "editor.renderWhitespace": "none",
     "editor.inlayHints.enabled": "off",
-    "editor.fontFamily": "Monaspace Neon",
-    // "editor.fontWeight": "450", // FiraCode Retina
+    "editor.fontFamily": "MesloLGS Nerd Font Mono, monospace",
     "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'liga'",
     "editor.minimap.enabled": false,
     "editor.tabSize": 4,
@@ -34,7 +56,7 @@
     "[cpp]": {
         "editor.rulers": [
             80
-        ],
+        ]
     },
 
     // clangd
@@ -69,5 +91,5 @@
     "git.openRepositoryInParentFolders": "always",
     "git.confirmSync": false,
     "git.autofetch": true,
-    "git.replaceTagsWhenPull": true,
+    "git.replaceTagsWhenPull": true
 }
