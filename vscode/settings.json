@@ -1,7 +1,7 @@
 {
     // General
-    "workbench.colorTheme": "Gruvbox Dark Medium",
-    "workbench.iconTheme": "gruvbox-material-icon-theme",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.iconTheme": "catppuccin-mocha",
     "debug.onTaskErrors": "abort",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
