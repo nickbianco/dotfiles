@@ -1,11 +1,12 @@
 {
     // General
     "workbench.colorTheme": "Catppuccin Macchiato",
-    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.iconTheme": "catppuccin-macchiato",
     "debug.onTaskErrors": "abort",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
     "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "top",
 
     // Terminal
     "terminal.external.osxExec": "iTerm2",
@@ -48,6 +49,7 @@
     "github.copilot.editor.enableAutoCompletions": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "files.trimTrailingWhitespace": false,
+    "workbench.editor.showTabs": "none",
     "[python]": {
         "editor.rulers": [
             88
@@ -91,5 +93,5 @@
     "git.openRepositoryInParentFolders": "always",
     "git.confirmSync": false,
     "git.autofetch": true,
-    "git.replaceTagsWhenPull": true
+    "git.replaceTagsWhenPull": true,
 }

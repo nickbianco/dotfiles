@@ -9,6 +9,7 @@ symbol = " "
 
 [conda]
 symbol = " "
+# conda config --set changeps1 False
 
 [crystal]
 symbol = " "
