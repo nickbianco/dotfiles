@@ -1,7 +1,7 @@
 {
     // General
-    "workbench.colorTheme": "Catppuccin Macchiato",
-    "workbench.iconTheme": "catppuccin-macchiato",
+    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "material-icon-theme",
     "debug.onTaskErrors": "abort",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
@@ -11,6 +11,7 @@
     // Terminal
     "terminal.external.osxExec": "iTerm2",
     "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono, monospace",
+    // "terminal.integrated.fontFamily": "'Monaspace Krypton', monospace",
     "terminal.integrated.lineHeight": 1.1,
     "terminal.integrated.profiles.linux": {
         "bash": null,
@@ -42,6 +43,7 @@
     "editor.renderWhitespace": "none",
     "editor.inlayHints.enabled": "off",
     "editor.fontFamily": "MesloLGS Nerd Font Mono, monospace",
+    // "editor.fontFamily": "'Monaspace Neon Medium', monospace",
     "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'liga'",
     "editor.minimap.enabled": false,
     "editor.tabSize": 4,
@@ -94,4 +96,9 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "git.replaceTagsWhenPull": true,
+
+    // Dotfiles
+    "dotfiles.repository": "https://github.com/nickbianco/dotfiles.git",
+    "dotfiles.targetPath": "~/.dotfiles",
+    "git.suggestSmartCommit": false,
 }
