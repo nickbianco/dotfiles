@@ -10,7 +10,7 @@
 
     // Terminal
     "terminal.external.osxExec": "iTerm2",
-    "terminal.integrated.fontFamily": "'MesloLGM Nerd Font Mono', monospace",
+    "terminal.integrated.fontFamily": "'MesloLGS NF', monospace",
     "terminal.integrated.profiles.linux": {
         "bash": null,
         "tmux": {
@@ -40,7 +40,7 @@
     "editor.fontSize": 12,
     "editor.renderWhitespace": "none",
     "editor.inlayHints.enabled": "off",
-    "editor.fontFamily": "'MesloLGM Nerd Font Mono', monospace",
+    "editor.fontFamily": "'MesloLGS NF', monospace",
     "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'liga'",
     "editor.minimap.enabled": false,
     "editor.tabSize": 4,
@@ -98,4 +98,5 @@
     "dotfiles.repository": "https://github.com/nickbianco/dotfiles.git",
     "dotfiles.targetPath": "~/.dotfiles",
     "git.suggestSmartCommit": false,
+    "window.customTitleBarVisibility": "auto",
 }
