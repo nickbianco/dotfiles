@@ -19,5 +19,9 @@
     {
         "key": "shift+alt+t",
         "command": "workbench.action.createTerminalEditor"
+    },
+    {
+        "key": "alt+c",
+        "command": "workbench.view.extension.cmake-view"
     }
 ]
