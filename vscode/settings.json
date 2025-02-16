@@ -99,4 +99,8 @@
     "dotfiles.targetPath": "~/.dotfiles",
     "git.suggestSmartCommit": false,
     "window.customTitleBarVisibility": "auto",
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "MATLAB.showFeatureNotAvailableError": false,
 }
