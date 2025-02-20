@@ -12,6 +12,7 @@ fi
 
 # Aliases
 alias ssh="TERM=xterm-256color \ssh"
+alias ranger='. ranger'
 
 # powerlevel10k
 source ~/powerlevel10k/powerlevel10k.zsh-theme
