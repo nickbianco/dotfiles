@@ -65,6 +65,7 @@
         "-header-insertion=never"
     ],
     "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "/home/nbianco/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd",
     
     // CMake
     "cmake.configureOnOpen": false,
@@ -99,7 +100,6 @@
     "dotfiles.targetPath": "~/.dotfiles",
     "git.suggestSmartCommit": false,
     "window.customTitleBarVisibility": "auto",
-    "clangd.path": "/home/nbianco/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd",
     "terminal.integrated.commandsToSkipShell": [
         "matlab.interrupt"
     ],
