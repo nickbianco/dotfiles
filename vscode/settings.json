@@ -45,7 +45,6 @@
     "editor.minimap.enabled": false,
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
-    "github.copilot.editor.enableAutoCompletions": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "files.trimTrailingWhitespace": false,
     "workbench.editor.showTabs": "none",
@@ -69,17 +68,6 @@
     // CMake
     "cmake.configureOnOpen": false,
     "cmake.showOptionsMovedNotification": false,
-    "cmake.configureSettings": {
-        // "OPENSIM_WITH_CASADI": true,
-        // "OPENSIM_WITH_TROPTER": true,
-        // "SUPERBUILD_ezc3d": true,
-        // "OPENSIM_C3D_PARSER": "ezc3d",
-        // "BUILD_PYTHON_WRAPPING": true,
-        // "Python3_ROOT_DIR": "C:/Users/nbianco/anaconda3/envs/opensim_dev",
-        // "OPENSIM_DOXYGEN_USE_MATHJAX": false,
-        // "DOXYGEN_EXECUTABLE": "/usr/bin/doxygen"
-        // "Enzyme_DIR": "/home/nbianco/repos/Enzyme/enzyme/build",
-    },
     "cmake.showConfigureWithDebuggerNotification": false,
     "cmake.allowUnsupportedPresetsVersions": true,
     "cmake.pinnedCommands": [
@@ -103,4 +91,5 @@
         "matlab.interrupt"
     ],
     "MATLAB.showFeatureNotAvailableError": false,
+    "github.copilot.nextEditSuggestions.enabled": false,
 }
