@@ -17,3 +17,12 @@ alias ranger='. ranger'
 # powerlevel10k
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.dotfiles/zsh/.p10k.zsh ]] || source ~/.dotfiles/zsh/.p10k.zsh
+
+# ffmpeg commands
+ffmpeg_png_to_mp4() {
+  BUFFER='ffmpeg -framerate 30 -pattern_type glob -i "*.png" -c:v libx264 -pix_fmt yuv420p out.mp4'
+  CURSOR=$#BUFFER
+  zle redisplay
+}
+zle -N ffmpeg_png_to_mp4
+bindkey '^F' ffmpeg_png_to_mp4
