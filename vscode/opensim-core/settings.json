@@ -1,0 +1,15 @@
+{
+    "cmake.configureSettings": {
+        "OPENSIM_WITH_CASADI": true,
+        "OPENSIM_DEPENDENCIES_DIR": "${workspaceFolder}/dependencies/install",
+        "BUILD_PYTHON_WRAPPING": false,
+        "Python3_ROOT_DIR": "~/miniconda3/envs/opensim_dev/bin",
+        "BUILD_JAVA_WRAPPING": false,
+        "Matlab_MEX_LIBRARY": "/Applications/MATLAB_R2024b.app/bin",
+        "Matlab_ROOT_DIR": "/Applications/MATLAB_R2024b.app",
+        "JAVA_HOME": "/opt/homebrew/opt/openjdk/bin",
+        "JAVA_INCLUDE_PATH": "/opt/homebrew/opt/openjdk/include",
+        "JAVA_AWT_LIBRARY": "/opt/homebrew/opt/openjdk/include",
+        "JAVA_JVM_LIBRARY": "/opt/homebrew/opt/openjdk/include"
+    }
+}
