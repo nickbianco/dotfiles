@@ -20,7 +20,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # ffmpeg commands
 ffmpeg_png_to_mp4() {
-  BUFFER='ffmpeg -framerate 30 -pattern_type glob -i "*.png" -c:v libx264 -pix_fmt yuv420p out.mp4'
+  BUFFER='ffmpeg -framerate 30 -pattern_type glob -i "*.png" -c:v libx264 -pix_fmt yuv420p -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" out.mp4'
   CURSOR=$#BUFFER
   zle redisplay
 }
