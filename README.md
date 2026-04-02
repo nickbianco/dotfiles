@@ -38,6 +38,14 @@ VS Code stores user settings in different locations on Mac and Linux. Note that 
     stow --target="$HOME/.config/Code/User" vscode/linux
 
 
+## Claude Code settings
+
+The `claude/CLAUDE.md` file contains global instructions for Claude Code. Since Claude Code does not support `stow` for its config directory, symlink it manually:
+
+    ln -s ~/.dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
+
+> **Note:** `~/.claude/` must already exist (it is created automatically when Claude Code is first run).
+
 ## Terminal settings
 
 ### iTerm2 (Mac)

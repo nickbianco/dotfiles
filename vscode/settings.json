@@ -110,4 +110,5 @@
     "git.blame.editorDecoration.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
+    "claudeCode.preferredLocation": "panel",
 }

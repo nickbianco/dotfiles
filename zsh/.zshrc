@@ -26,3 +26,5 @@ ffmpeg_png_to_mp4() {
 }
 zle -N ffmpeg_png_to_mp4
 bindkey '^F' ffmpeg_png_to_mp4
+
+. "$HOME/.local/bin/env"
