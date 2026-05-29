@@ -46,7 +46,6 @@
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    // "files.trimTrailingWhitespace": true,
     "trailing-spaces.deleteModifiedLinesOnly": true,
     "trailing-spaces.trimOnSave": true,
     "workbench.editor.showTabs": "none",
@@ -78,6 +77,7 @@
         "workbench.action.tasks.runTask"
     ],
     "cmake.automaticReconfigure": false,
+    "cmake.generator": "Unix Makefiles",
 
     // Git
     "git.openRepositoryInParentFolders": "always",
@@ -110,5 +110,7 @@
     "git.blame.editorDecoration.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
-    "claudeCode.preferredLocation": "panel",
+
+    // Claude Code
+    "claudeCode.preferredLocation": "panel"
 }
