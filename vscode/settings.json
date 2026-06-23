@@ -112,5 +112,6 @@
     "gitlens.codeLens.recentChange.enabled": false,
 
     // Claude Code
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "panel",
+    "gitlens.ai.vscode.model": "copilot:oswe-vscode-modelD"
 }
