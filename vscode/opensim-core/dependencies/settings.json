@@ -1,6 +1,0 @@
-{
-    "cmake.configureSettings": {
-        "OPENSIM_WITH_CASADI": true,
-        "CMAKE_INSTALL_PREFIX": "${workspaceFolder}/install"
-    }
-}

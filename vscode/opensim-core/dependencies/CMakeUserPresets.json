@@ -1,0 +1,35 @@
+{
+    "version": 6,
+    "configurePresets": [
+        {
+            "name": "nick-dev",
+            "description": "Recommended development configuration that builds all dependencies that a typical release requires",
+            "inherits": [
+                "base",
+                "macos",
+                "relwithdebinfo"
+            ],
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+                "OPENSIM_WITH_CASADI": "ON",
+                "SUPERBUILD_ezc3d": "ON"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "nick-dev",
+            "configurePreset": "nick-dev",
+            "jobs": 8
+        }
+    ],
+    "workflowPresets": [
+        {
+            "name": "nick-dev",
+            "steps": [
+                { "type": "configure", "name": "nick-dev" },
+                { "type": "build",     "name": "nick-dev" }
+            ]
+        }
+    ]
+}
