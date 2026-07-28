@@ -3,7 +3,7 @@
     "configurePresets": [
         {
             "name": "nick-dev",
-            "description": "Recommended development configuration that builds all dependencies that a typical release requires",
+            "description": "Nick's personal development configuration",
             "inherits": [
                 "base",
                 "macos",
@@ -14,12 +14,22 @@
                 "OPENSIM_WITH_CASADI": "ON",
                 "SUPERBUILD_ezc3d": "ON"
             }
+        },
+        {
+            "name": "nick-dev-bindings",
+            "description": "Nick's personal development configuration (w/ bindings)",
+            "inherits": "nick-dev"
         }
     ],
     "buildPresets": [
         {
             "name": "nick-dev",
             "configurePreset": "nick-dev",
+            "jobs": 8
+        },
+        {
+            "name": "nick-dev-bindings",
+            "configurePreset": "nick-dev-bindings",
             "jobs": 8
         }
     ],
@@ -29,6 +39,13 @@
             "steps": [
                 { "type": "configure", "name": "nick-dev" },
                 { "type": "build",     "name": "nick-dev" }
+            ]
+        },
+        {
+            "name": "nick-dev-bindings",
+            "steps": [
+                { "type": "configure", "name": "nick-dev-bindings" },
+                { "type": "build",     "name": "nick-dev-bindings" }
             ]
         }
     ]

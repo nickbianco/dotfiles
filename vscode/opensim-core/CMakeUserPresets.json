@@ -3,7 +3,7 @@
     "configurePresets": [
         {
             "name": "nick-dev",
-            "description": "Recommended development configuration that builds all dependencies that a typical release requires",
+            "description": "Nick's personal development configuration",
             "inherits": [
                 "base",
                 "macos",
@@ -18,12 +18,33 @@
                 "BUILD_API_EXAMPLES": "ON",
                 "OPENSIM_C3D_PARSER": "ezc3d"
             }
+        },
+        {
+            "name": "nick-dev-bindings",
+            "description": "Nick's personal development configuration (w/ bindings)",
+            "inherits": "nick-dev",
+            "cacheVariables": {
+                "BUILD_JAVA_WRAPPING": "ON",
+                "BUILD_PYTHON_WRAPPING": "ON",
+                "Python3_ROOT_DIR": "~/miniconda3/envs/opensim_dev/bin",
+                "Matlab_MEX_LIBRARY": "/Applications/MATLAB_R2025b.app/bin",
+                "Matlab_ROOT_DIR": "/Applications/MATLAB_R2025b.app",
+                "JAVA_HOME": "/opt/homebrew/opt/openjdk/bin",
+                "JAVA_INCLUDE_PATH": "/opt/homebrew/opt/openjdk/include",
+                "JAVA_AWT_LIBRARY": "/opt/homebrew/opt/openjdk/include",
+                "JAVA_JVM_LIBRARY": "/opt/homebrew/opt/openjdk/include"
+            }
         }
     ],
     "buildPresets": [
         {
             "name": "nick-dev",
             "configurePreset": "nick-dev",
+            "jobs": 8
+        },
+        {
+            "name": "nick-dev-bindings",
+            "configurePreset": "nick-dev-bindings",
             "jobs": 8
         }
     ],
@@ -34,6 +55,14 @@
                 { "type": "configure", "name": "nick-dev" },
                 { "type": "build",     "name": "nick-dev" }
             ]
+        },
+        {
+            "name": "nick-dev-bindings",
+            "steps": [
+                { "type": "configure", "name": "nick-dev-bindings" },
+                { "type": "build",     "name": "nick-dev-bindings" }
+            ]
         }
     ]
 }
+
